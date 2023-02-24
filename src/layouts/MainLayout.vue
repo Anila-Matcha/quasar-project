@@ -95,7 +95,7 @@ const linksList = [
 ]
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: 'MainLayoutOld',
 
   components: {
     EssentialLink

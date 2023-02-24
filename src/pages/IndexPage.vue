@@ -1,17 +1,23 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <!--<q-input v-model="text" :dense="true"/>-->
+    <ItemCart />
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+import ItemCart from "../components/ItemCart.vue";
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  methods: {
+    save:function(){
+      console.log("Testing QUasar app");
+    }
+  },
+  components:{
+    ItemCart
+  }
 })
 </script>
